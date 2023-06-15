@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <nav class="navbar bg-body-secondary">
+        <div class="container-fluid ">
+          <span class="navbar-brand mb-0 h1 text-center w-100">Todo App </span>
+        </div>
+      </nav>
+      <main class="container my-5">
+        <div class="card py-4 px-5 mb-3">
+            <h1 class="text-center">Add Todo</h1>
+            <div>
+                <form>
+                    <div class="mb-3 ">
+                        <!-- <div class="input-group has-validation"> -->
+                        <label for="addTodo" class="form-label">Enter Todo</label>
+                        <input type="text" class="form-control form-control-lg" id="addTodo" placeholder="learn HTML" name="todo" >
+                        <div class="alert alert-danger mt-2" id="error-msg">
+                        </div>
+                        <!-- </div> -->
+                        <input type="submit" class="btn btn-primary mt-2" id="submit">
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class="card py-4 px-5">
+            <h1 class="text-center">Your Todo</h1>
+            <button class="btn btn-info" id="clear-btn">Clear All Todo</button>
+            <div>
+                <ul class="list-group" id="todo-list">
+                </ul>
+            </div>
+        </div>
+        <div class="toast-container top-0 start-50 translate-middle-x p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <!-- <img src="..." class="rounded me-2" alt="..."> -->
+                    <strong class="me-auto">Notification</strong>
+                    <!-- <small>11 mins ago</small> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Todo Added Success Fully
+                </div>
+            </div>
+        </div>
+      </main>
+    <script src="./vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="./vendor/js/app.js"></script>
+</body>
+</html>
