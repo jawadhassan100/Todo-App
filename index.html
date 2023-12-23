@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Todo App</title>
 </head>
-<body>
-    <nav class="navbar bg-body-secondary">
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-light bg-light justify-content-center">
+  <a class="navbar-brand fs-3 fw-bold fst-italic">Todo App</a>
+</nav>
+    <!-- <nav class=" navbar navbar bg-info justify-content-center">
         <div class="container-fluid ">
-          <span class="navbar-brand mb-0 h1 text-center w-100">Todo App </span>
+          <span class="navbar-brand mb-0 h1  rounded-2 bg-danger-subtle">Todo App</span>
         </div>
-      </nav>
+      </nav> -->
       <main class="container my-5">
-        <div class="card py-4 px-5 mb-3">
-            <h1 class="text-center">Add Todo</h1>
+        <div class="card py-4 px-5 mb-3 ">
+            <h1 class="text-center fst-italic">Add Todo</h1>
             <div>
                 <form>
                     <div class="mb-3 ">
                         <!-- <div class="input-group has-validation"> -->
-                        <label for="addTodo" class="form-label">Enter Todo</label>
+                        <label for="addTodo" class="form-label">Enter Todo:</label>
                         <input type="text" class="form-control form-control-lg" id="addTodo" placeholder="Enter Todo" name="todo" >
                         <div class="alert alert-danger mt-2" id="error-msg">
                         </div>
@@ -32,8 +35,9 @@
             </div>
         </div>
         <div class="card py-4 px-5">
-            <h1 class="text-center">Your Todo</h1>
-            <button class="btn btn-info" id="clear-btn">Clear All Todo</button>
+            <h1 class="text-center fst-italic">Your Todo</h1>
+            <button class="btn btn-info fw-light" id="clear-btn">Clear All Todo</button>
+            <br>
             <div>
                 <ul class="list-group" id="todo-list">
                 </ul>

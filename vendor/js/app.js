@@ -19,8 +19,8 @@ let date = new Date().toLocaleDateString("en-US", {
   day: "numeric",
   year: "numeric",
 });
-function submitHandler() {
-  // event.preventDefault();
+function submitHandler(event) {
+  event.preventDefault();
   if (form.todo.value === "") {
     showErrorMsg.style.display = "";
     showErrorMsg.innerText = "Todo Must not be empty";
